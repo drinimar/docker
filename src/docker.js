@@ -495,7 +495,7 @@ Docker.prototype.parseSections = function(data, lang) {
 
           if (lang.jsDoc) {
             // Strip off leading * characters.
-            multiLine = multiLine.replace(/^[ \t]*\*? ?/gm, '');
+            multiLine = multiLine.replace(/^[ \t]*[\*!]? ?/gm, '');
 
             jsDocData = dox.parseComment(multiLine, { raw: true });
 
