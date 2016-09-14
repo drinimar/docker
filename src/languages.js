@@ -157,6 +157,13 @@ var langs = module.exports = {
     names: [ '.eslintrc', '.jshintrc' /* various other .rc's */ ],
     comment: '//', multiLine: [ /\/\*\*?/, /\*\// ]
   },
+  fortran: {
+    extensions: [ 'f' ],
+    highlightLanguage: 'fortran',
+    comment: '!!',  // No real blocks - might have to add one
+    jsDoc: true,
+    multiLine: [ /!</, /!>/ ]
+  },
   fortran90: {
     extensions: [ 'f90' ],
     highlightLanguage: 'fortran',
